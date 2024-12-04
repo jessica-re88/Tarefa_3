@@ -24,13 +24,13 @@ def obter_resposta(texto: str) -> str:
         ('olá', 'boa tarde', 'bom dia'): 'Olá tudo bem!',
         'como estás': 'Estou bem, obrigado!',
         'como te chamas': 'O meu nome é: Bot :)',
-        ('criador', 'quem te criou'): 'Fui criado por um programador em Python.'
-        ('profissão', 'trabalho'): 'Sou um assistente virtual, meu trabalho é conversar e ajudar',
-        'ajuda': 'Posso responder perguntas simples. Tente peruntar algo!',
-        ('local', 'onde moras'): 'Moro no mundo digital, em um computador',
+        ('criador', 'quem te criou'): 'Fui criado por um programador em Python.',
+        ('profissão', 'trabalho'): 'Sou um assistente virtual, meu trabalho é conversar e ajudar.',
+        'ajuda': 'Posso responder perguntas simples. Tente perguntar algo!',
+        ('local', 'onde moras'): 'Moro no mundo digital, em um computador.',
         'tempo': 'Está um dia de sol!',
-        'sol': 'Bom para ir a praia',
-        ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...'
+        'sol': 'Bom para ir à praia.',
+        ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...',
         'horas': f'São: {datetime.now():%H:%M} horas',
         'data': f'Hoje é dia: {datetime.now():%d-%m-%Y}'
     }
@@ -41,12 +41,6 @@ def obter_resposta(texto: str) -> str:
                 return resposta
         elif chave in comando:
             return resposta
-
-    if 'horas' in comando:
-        return f'São: {datetime.now():%H:%M} horas'
-
-    if 'data' in comando:
-        return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
 
     return f'Desculpa, não entendi a questão! {texto}'
 
