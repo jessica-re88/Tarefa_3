@@ -25,6 +25,7 @@ def obter_resposta(texto: str) -> str:
         'como estás': 'Estou bem, obrigado!',
         'como te chamas': 'O meu nome é: Bot :)',
         ('criador', 'quem te criou'): 'Fui criado por um programador em Python.'
+        ('profissão', 'trabalho'): 'Sou um assistente virtual, meu trabalho é conversar e ajudar',
         'tempo': 'Está um dia de sol!',
         'sol': 'Bom para ir a praia',
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...'
