@@ -46,10 +46,10 @@ def obter_resposta(texto: str) -> str:
 
 
 def chat() -> None:
-    print('Bem-vindo ao ChatBot!')
-    print('Escreva "bye" para sair do chat')
-    name: str = input('Bot: Como te chamas? ')
-    print(f'Bot: Olá, {name}! \n Como te posso ajudar?')
+    print('\033[1;34mBem-vindo ao ChatBot!\033[m')
+    print('\033[1;35mEscreva "bye" para sair do chat\033[m')
+    name: str = input('\033[1;33mBot: Como te chamas? \033[m')
+    print(f'\033[1;32mBot: Olá, {name}! \n Como te posso ajudar?\033[m')
 
     while True:
         user_input: str = input('Tu: ')
