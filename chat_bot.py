@@ -27,6 +27,7 @@ def obter_resposta(texto: str) -> str:
         ('criador', 'quem te criou'): 'Fui criado por um programador em Python.'
         ('profissão', 'trabalho'): 'Sou um assistente virtual, meu trabalho é conversar e ajudar',
         'ajuda': 'Posso responder perguntas simples. Tente peruntar algo!',
+        ('local', 'onde moras'): 'Moro no mundo digital, em um computador',
         'tempo': 'Está um dia de sol!',
         'sol': 'Bom para ir a praia',
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...'
