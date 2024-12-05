@@ -59,7 +59,7 @@ def chat() -> None:
         if resposta == 'Gostei de falar contigo! Até breve...':
             break
 
-    print('Chat acabou')
+    print('\033[1;34mChat acabou\033[m')
     print()
 
 
